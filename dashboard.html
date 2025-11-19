@@ -1,0 +1,223 @@
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockBet - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard-styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-brand">
+                <span class="logo-icon">🛡️</span>
+                <span class="logo-text">BlockBet</span>
+            </div>
+            <div class="nav-items">
+                <a href="#" class="nav-link active">Dashboard</a>
+                <a href="#" class="nav-link">Sitios Bloqueados</a>
+                <a href="#" class="nav-link">Acompañantes</a>
+                <a href="#" class="nav-link">Configuración</a>
+            </div>
+            <div class="user-menu">
+                <img src="https://via.placeholder.com/40" alt="Perfil" class="user-avatar">
+                <button class="btn-menu">⋮</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3>Tu Progreso</h3>
+                <div class="progress-card">
+                    <div class="days-counter">
+                        <span class="number">7</span>
+                        <span class="label">Días Sin Intentos</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 70%"></div>
+                    </div>
+                    <p class="progress-text">Vas por buen camino 💪</p>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Estadísticas</h3>
+                <div class="stat-item">
+                    <span class="stat-label">Intentos Bloqueados</span>
+                    <span class="stat-value">24</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Sitios Monitoreados</span>
+                    <span class="stat-value">5</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Dinero Ahorrado</span>
+                    <span class="stat-value">$3,200</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <button class="btn-primary full-width">Agregar Sitio</button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="dashboard-header">
+                <div>
+                    <h1>¡Bienvenido, Juan!</h1>
+                    <p class="subtitle-text">Hoy es un nuevo día para recuperar tu control</p>
+                </div>
+                <div class="header-date">
+                    <span class="date-badge">Miércoles, 19 de Noviembre</span>
+                </div>
+            </header>
+
+            <!-- Cards Container -->
+            <section class="cards-grid">
+                <!-- Card: Motivación Diaria -->
+                <article class="card card-motivation">
+                    <div class="card-header">
+                        <h2>💌 Mensaje Motivacional</h2>
+                        <button class="btn-icon">✕</button>
+                    </div>
+                    <div class="card-body">
+                        <p class="motivation-text">"Cada día que resistes es una victoria. Eres más fuerte de lo que crees."</p>
+                        <div class="motivation-author">— Tu Sistema de Apoyo</div>
+                    </div>
+                </article>
+
+                <!-- Card: Últimas Alertas -->
+                <article class="card card-alerts">
+                    <div class="card-header">
+                        <h2>🚨 Intentos Detectados</h2>
+                        <span class="badge badge-warning">3</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert-item">
+                            <span class="alert-time">Hoy 14:23</span>
+                            <span class="alert-site">Bet365</span>
+                            <span class="badge badge-blocked">Bloqueado</span>
+                        </div>
+                        <div class="alert-item">
+                            <span class="alert-time">Ayer 22:15</span>
+                            <span class="alert-site">PokerStars</span>
+                            <span class="badge badge-blocked">Bloqueado</span>
+                        </div>
+                        <div class="alert-item">
+                            <span class="alert-time">Ayer 19:45</span>
+                            <span class="alert-site"> 1xBet</span>
+                            <span class="badge badge-blocked">Bloqueado</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card: Sitios Bloqueados -->
+                <article class="card card-sites">
+                    <div class="card-header">
+                        <h2>🔒 Sitios Bloqueados</h2>
+                        <span class="badge badge-info">5</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="site-list">
+                            <div class="site-item">
+                                <div class="site-name">Bet365</div>
+                                <div class="site-status">Activo</div>
+                            </div>
+                            <div class="site-item">
+                                <div class="site-name">PokerStars</div>
+                                <div class="site-status">Activo</div>
+                            </div>
+                            <div class="site-item">
+                                <div class="site-name">1xBet</div>
+                                <div class="site-status">Activo</div>
+                            </div>
+                            <div class="site-item">
+                                <div class="site-name">William Hill</div>
+                                <div class="site-status">Activo</div>
+                            </div>
+                            <div class="site-item">
+                                <div class="site-name">Betway</div>
+                                <div class="site-status">Activo</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-secondary full-width">Editar Sitios</button>
+                    </div>
+                </article>
+
+                <!-- Card: Acompañantes -->
+                <article class="card card-supporters">
+                    <div class="card-header">
+                        <h2>👥 Tu Red de Apoyo</h2>
+                        <span class="badge badge-success">2</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="supporter-item">
+                            <img src="https://via.placeholder.com/32" alt="María" class="supporter-avatar">
+                            <div class="supporter-info">
+                                <div class="supporter-name">María López</div>
+                                <div class="supporter-role">Amiga</div>
+                            </div>
+                            <span class="status-online">●</span>
+                        </div>
+                        <div class="supporter-item">
+                            <img src="https://via.placeholder.com/32" alt="Dr. García" class="supporter-avatar">
+                            <div class="supporter-info">
+                                <div class="supporter-name">Dr. García</div>
+                                <div class="supporter-role">Terapeuta</div>
+                            </div>
+                            <span class="status-offline">●</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-secondary full-width">Invitar Acompañante</button>
+                    </div>
+                </article>
+
+                <!-- Card: Progreso Semanal -->
+                <article class="card card-weekly">
+                    <div class="card-header">
+                        <h2>📈 Progreso Semanal</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-container">
+                            <div class="chart-bar" style="height: 30%;" title="Lun: 2 intentos"></div>
+                            <div class="chart-bar" style="height: 45%;" title="Mar: 3 intentos"></div>
+                            <div class="chart-bar" style="height: 20%;" title="Mié: 1 intento"></div>
+                            <div class="chart-bar" style="height: 0%;" title="Jue: 0 intentos"></div>
+                            <div class="chart-bar" style="height: 25%;" title="Vie: 2 intentos"></div>
+                            <div class="chart-bar" style="height: 15%;" title="Sáb: 1 intento"></div>
+                            <div class="chart-bar" style="height: 10%;" title="Dom: 1 intento"></div>
+                        </div>
+                        <div class="chart-labels">
+                            <span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card: Consejos -->
+                <article class="card card-tips">
+                    <div class="card-header">
+                        <h2>💡 Consejo del Día</h2>
+                    </div>
+                    <div class="card-body">
+                        <p class="tip-text">Cuando sientas la urgencia de apostar, tómate 5 minutos para respirar profundamente. La mayoría de los impulsos pasan en menos de 10 minutos.</p>
+                        <button class="btn-secondary">Ver más consejos</button>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
